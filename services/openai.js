@@ -62,7 +62,7 @@ const createTextCompletion = ({
   frequencyPenalty = config.OPENAI_COMPLETION_FREQUENCY_PENALTY,
   presencePenalty = config.OPENAI_COMPLETION_PRESENCE_PENALTY,
   stop = config.OPENAI_COMPLETION_STOP_SEQUENCES,
-}) => client.post('/v1/completions', {
+}) => client.post('/v1/chat/completions', {
   model,
   prompt,
   temperature,
